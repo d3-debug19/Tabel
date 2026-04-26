@@ -1,0 +1,174 @@
+body{
+  background-color:#f4f7f6;
+  padding: 40px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Membuat semua konten ke tengah secara horizontal */
+    background-color: #f4f7f6;
+    padding: 40px;
+}
+
+body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+    /* ... kode body lainnya ... */
+}
+
+  .business-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+  }
+
+  .business-table thead tr {
+    background-color: #1a3a5f; /* Biru Navy Bisnis */
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .business-table th, 
+  .business-table td {
+    padding: 15px 20px;
+    border: 1px solid #eeeeee;
+  }
+
+  /* Baris Zebra & Hover */
+  .business-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+
+  .business-table tbody tr:hover {
+    background-color: #f1f5f9; /* Berubah warna saat disentuh */
+    transition: 0.3s;
+  }
+
+  .category {
+    font-weight: bold;
+    color: #1a3a5f;
+    vertical-align: middle; /* Teks di tengah secara vertikal */
+    background-color: #ffffff !important;
+  }
+
+  .free-tag {
+    color: #27ae60; /* Hijau sukses */
+    font-weight: bold;
+  }
+
+  tfoot {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+.form-container {
+    background: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 500px; /* Agar form tidak terlalu lebar */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1a3a5f;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Sangat penting agar padding tidak merusak lebar */
+}
+
+.btn-submit {
+    background-color: #1a3a5f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #27ae60; /* Berubah jadi hijau saat mau dikirim */
+}
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #1a3a5f; /* Berubah jadi biru navy saat diklik */
+    box-shadow: 0 0 5px rgba(26, 58, 95, 0.3);
+}
+/* Media Query: Untuk layar yang lebih lebar dari 768px (Tablet & Laptop) */
+@media (min-width: 768px) {
+    .business-table, .form-container {
+        max-width: 800px; /* Batasi lebar maksimal */
+        margin-left: auto; /* Geser ke tengah */
+        margin-right: auto; /* Geser ke tengah */
+    }
+    
+    body {
+        padding: 60px; /* Beri ruang lebih lega di layar besar */
+    }
+}
+/* Gaya Tombol Ganti Tema */
+.btn-theme {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid #1a3a5f;
+    background: white;
+}
+
+/* Mode Malam yang Lebih Mewah */
+body.dark-mode {
+    background-color: #0b0e14; /* Biru hitam gelap, bukan hitam pekat */
+    color: #e0e6ed; /* Putih tulang agar tidak silau */
+}
+
+body.dark-mode .business-table, 
+body.dark-mode .form-container {
+    background-color: #161b22; /* Abu-abu gelap khas GitHub */
+    border: 1px solid #30363d;
+    color: #e0e6ed;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Memperbaiki baris tabel agar tidak putih terang */
+body.dark-mode .business-table tbody tr:nth-of-type(even) {
+    background-color: #1c2128;
+}
+
+body.dark-mode .business-table thead tr {
+    background-color: #21262d; /* Header lebih terang sedikit */
+    color: #58a6ff; /* Teks header jadi biru muda */
+}
+
+body.dark-mode .category {
+    background-color: #161b22 !important;
+    color: #58a6ff;
+}
+
+/* Memperbaiki input agar tidak putih menyala */
+body.dark-mode input, 
+body.dark-mode select, 
+body.dark-mode textarea {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    color: white;
+}
+
+}
+

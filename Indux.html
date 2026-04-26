@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="UTF-8">
+    <title>Penawaran Harga Bisnis</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button id="themeToggle" class="btn-theme">Ganti Tema 🌙</button>
+
+    <table class="business-table">
+        <thead>
+            <tr>
+                <th>Kategori</th>
+                <th>Layanan</th>
+                <th>Harga</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" class="category">Digital Marketing</td>
+                <td>Manajemen Sosmed</td>
+                <td>Rp 2.5jt</td>
+                <td><button class="btn-buy">Pesan</button></td>
+            </tr>
+            <tr>
+                <td>Iklan Meta</td>
+                <td>Rp 1.5jt</td>
+                <td><button class="btn-buy">Pesan</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="form-container">
+    <h3>Formulir Pemesanan Layanan</h3>
+    <form id="orderForm">
+        <div class="form-group">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" placeholder="Masukkan nama Anda..." required>
+        </div>
+
+        <div class="form-group">
+            <label for="layanan">Pilih Layanan:</label>
+            <select id="layanan">
+                <option value="sosmed">Manajemen Sosmed</option>
+                <option value="ads">Iklan Meta</option>
+                <option value="web">Website E-Commerce</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="pesan">Catatan Tambahan:</label>
+            <textarea id="pesan" rows="4" placeholder="Detail pesanan..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Kirim Pesanan</button>
+    </form>
+</div>
+<script src="script.js"></script>
+  </body>
+</html>
